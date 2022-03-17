@@ -124,8 +124,7 @@
 
 .div1{
    
-    min-height: 200px;
-
+  background-color: #F2F2F2;
 }
 
 #menu img{
@@ -149,29 +148,29 @@
 /* Nossa Empresa*/
 
 .div2{
-    min-height: 200px;
+    min-height: 20rem;
+    min-width: 50rem;
 
 }
 
 .div2 p{
-    width:430px;
-    height:100px;
-	/*background-color: rgb(255, 21, 21);
-	margin-bottom:40px;
-	margin-left:105px;*/
-    font-size:20px;
+    width: 43rem;
+    height: 8rem;
+    font-size: 1.4rem;
    
 }
 
 .div2 h3{
-    width:430px;
-    height:100px;
-	/*background-color:rgb(77, 235, 15);
-	/*margin-left:105px;
-    margin-top:120px;*/
-    font-size:50px;
+    width: 50rem;
+    height: 8rem;
+    font-size: 4rem;
     font-family: fantasy;
    
+}
+@media (max-widht:768px) {
+    .div2 p{
+        background-color: aqua;
+    }
 }
 
 
@@ -179,7 +178,7 @@
 /*Nossos Serviços*/
 .div3 {
    
-    min-height:250px;
+    min-height:100rem;
 	background-color:#fff;
 	
    
@@ -187,21 +186,32 @@
 
 .div3 h3{
    
-    min-height:20px;
-	background-color:rgb(233, 229, 10);
-    margin-top:130px;
-    margin-left:100px;
-    font-size:50px;
+    min-height: 2rem;
+  
+    margin-top: 10rem;
+ 
+    font-size: 3.8rem;
     font-family: fantasy;
-    margin-bottom:50px;
+    margin-bottom: 5rem;
+    text-align: center;
 	
    
 }
 
 .font1 h5{
     color:#04bfbf;
+    font-size: 2rem;
     
    
+}
+@media (max-width:768px) {
+    .font1 h5{
+        background-color: brown;
+    }
+    
+}
+.texto1 p{
+    font-size: 1rem;
 }
 
 .texto1 li{
@@ -217,18 +227,15 @@
 
 #lado1{
     width: 32%;
-    height:245px;
+    height: 20rem;
     float: left;
-    position:relative;
-    background-color: rgb(0, 4, 236);
 }
 
 #lado2{
-    width:66%;
-    height:245px;
+    max-width: 66%;
+    min-width: 60%;
+    min-height: 2rem;
     float: left;
-    position:relative;
-    background-color: rgb(4, 144, 238);
 }
 
 .img1{
@@ -237,8 +244,8 @@
     top: 5%;
     box-sizing: border-box;
     margin: 0.5%;
-    width: 65%;
-    height:80%;
+    width: 75%;
+    height:auto;
     opacity: 85%;
     border-radius: 5%;
 }
@@ -254,31 +261,25 @@
 #lado4{
     width: 32%;
     height:245px;
-    float: left;
-    position:relative;
-    background-color:rgb(250, 0, 217);
-    margin-top:80px;
+    
 }
 
 #lado5{
-    width:66%;
-    height:245px;
+    width: 66%;
+    height: 15rem;
     float: left;
-    position:relative;
-    background-color:rgb(247, 8, 68);
-    margin-top:80px;
+    margin-top: 4rem;
+
 }
-
-
 
 .img2{
  
     box-sizing: border-box;
-    width: 65%;
-    height:80%;
-    opacity: 85%;
+    width: 75%;
+    height:auto;
+
     border-radius: 5%;
-    margin-left:26px;
+    margin-left:2rem;
     
 }
 
@@ -294,20 +295,20 @@
 
 #lado6{
     width: 32%;
-    height:245px;
+    height: 18rem;
     float: left;
-    position:relative;
-    background-color:rgb(255, 145, 0);
-    margin-top:50px;
+    /* position: relative; */
+    /* background-color: rgb(255, 145, 0); */
+    margin-top: 5rem;
 }
 
 #lado7{
-    width:66%;
-    height:245px;
+    width: 66%;
+    height: 15rem;
     float: left;
-    position:relative;
-    background-color:rgb(150, 109, 49);
-    margin-top:50px;
+    /* position: relative; */
+    /* background-color: rgb(150, 109, 49); */
+    margin-top: 5rem;
 }
 
 
@@ -315,12 +316,13 @@
 
 .img3{
     box-sizing: border-box;
-    width: 65%;
-    height:80%;
-    opacity: 85%;
+    width: 75%;
+    height: auto;
+    /* opacity: 85%; */
     border-radius: 5%;
-    margin-left:26px;
+    margin-left: 2rem;
 }
+
 
 .div6 {
    
