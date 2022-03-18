@@ -167,18 +167,14 @@
     font-family: fantasy;
    
 }
-@media (max-widht:768px) {
-    .div2 p{
-        background-color: aqua;
-    }
-}
+
 
 
 
 /*Nossos Serviços*/
 .div3 {
    
-    min-height:100rem;
+    min-height:65rem;
 	background-color:#fff;
 	
    
@@ -208,7 +204,15 @@
     .font1 h5{
         background-color: brown;
     }
+    .div2 p{
+        background-color: aqua;
+    }
     
+}
+@media (min-width:768px) {
+    .historia {
+        margin-left: 30rem;
+    }
 }
 .texto1 p{
     font-size: 1rem;
@@ -333,13 +337,12 @@
 }
 
 .div6 h3{
-   
-    min-height:20px;
-	background-color:rgb(0, 255, 170);
-	margin-top:180px;
-    margin-left:90px;
-    font-size:50px;
+
+    min-height: 2rem;
+    margin-top: 10rem;
+    font-size: 3.8rem;
     font-family: fantasy;
+    text-align: center;
    
 }
 
@@ -365,70 +368,69 @@
 
 .div9{
    
-    min-height:100px;
-	background-color: rgb(11, 122, 38);
-    margin-bottom:60px;
+    min-height:12rem;
+	
 }
 
 .div9 h3{
    
-    min-height:40px;
-	margin-left:105px;
-    font-size:50px;
+    min-height: 2rem;
+    font-size: 3.8rem;
     font-family: fantasy;
-    background-color: #791919;
+    text-align: center;
+    
     
 }
 
 .historia{
 
- margin-left:105px;   
- background-color: rgb(255, 0, 0);
- width:800px;
- margin-top:30px;
-
+    margin-left: 5rem;
+    width: 50rem;
+    text-align: justify;
+    margin-top: 30px;
+    align-items: center;
 }
+
 
 .div10 {
 
-    min-height:430px;
+    min-height:25rem;
 	background-color: #fff;
-    margin-bottom:120px;
+    margin-bottom:5rem;
 	
 
 }
 
 #lado14{
     width:33%;
-    height:275px;
+    height:375px;
     float: left;
     position:relative;
-    background-color: rgb(218, 177, 177);
+    background-color:#fff;
     margin-top:80px;
 }
 
 
 
 #lado15{
-    width: 33%;
-    height:275px;
+    width: 34%;
+    height:375px;
     float: left;
     position:relative;
-    background-color: rgb(187, 90, 90);
+    background-color:#fff;
     margin-top:80px;
 }
 
 
 
 #lado16{
-    width: 34%;
-    height:275px;
+    width: 33%;
+    height:375px;
     float: left;
     position:relative;
-    background-color: rgb(168, 124, 124);
+    background-color: #fff;
     margin-top:80px;
 }
-
 
 
 .redes{
@@ -494,3 +496,258 @@
 
 
 
+/*missão,visão,valores*/
+
+/* Efeito Oscar em imagens */
+
+
+/*parte 1 - Missão*/
+.grid{
+    margin-left: 60px;
+}
+
+
+/*figure.effect-oscar {
+	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+    width:300px;
+}*/
+
+figure.effect-oscar img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;    
+	width:400px;
+}
+
+figure.effect-oscar figcaption {
+	padding: 3em;
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+/*pra mecher na altura e largura da caixa branca so ir em width e height*/
+figure.effect-oscar figcaption::before {
+	position: absolute;
+	top:530px;
+	right: 30px;
+	bottom: 30px;
+	left:50px;
+	content: '';
+	width:300px;
+	height:300px;
+    margin-left:26px;
+}
+
+
+/*pra mecher no movimento do texto é mecher no margin top*/
+figure.effect-oscar h2 {
+	margin: 20% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+	margin-top:-200px;
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-oscar:hover img {
+	opacity: 0.4;
+}
+
+
+
+
+
+
+
+
+/*parte 2 - Visão*/
+.grid2{
+    margin-left: 60px;
+}
+
+
+/*figure.effect-oscar2 {
+	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+    width:300px;
+}*/
+
+figure.effect-oscar2 img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;    
+	width:400px;
+}
+
+figure.effect-oscar2 figcaption {
+	padding: 3em;
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+/*pra mecher na altura e largura da caixa branca so ir em width e height*/
+figure.effect-oscar2 figcaption::before {
+	position: absolute;
+	top:530px;
+	right: 30px;
+	bottom: 30px;
+	left:610px;
+	content: '';
+	width:300px;
+	height:300px;
+    margin-left:26px;
+}
+
+
+/*pra mecher no movimento do texto é mecher no margin top*/
+figure.effect-oscar2 h2 {
+	margin: 20% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+	margin-top:-200px;
+}
+
+figure.effect-oscar2 figcaption::before,
+figure.effect-oscar2 p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect-oscar2:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar2:hover figcaption::before,
+figure.effect-oscar2:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-oscar2:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-oscar2:hover img {
+	opacity: 0.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*parte 3 - Valores*/
+.grid3{
+    margin-left: 60px;
+}
+
+
+/*figure.effect-oscar3{
+	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+    width:300px;
+}*/
+
+figure.effect-oscar3 img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;    
+	width:400px;
+}
+
+figure.effect-oscar3 figcaption {
+	padding: 3em;
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+/*pra mecher na altura e largura da caixa branca so ir em width e height*/
+figure.effect-oscar3 figcaption::before {
+	position: absolute;
+	top:530px;
+	right: 30px;
+	bottom: 30px;
+	left:1170px;
+	content: '';
+	width:300px;
+	height:300px;
+    margin-left:26px;
+}
+
+
+/*pra mecher no movimento do texto é mecher no margin top*/
+figure.effect-oscar3 h2 {
+	margin: 20% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+	margin-top:-200px;
+}
+
+figure.effect-oscar3 figcaption::before,
+figure.effect-oscar3 p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect-oscar3:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar3:hover figcaption::before,
+figure.effect-oscar3:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-oscar3:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-oscar3:hover img {
+	opacity: 0.4;
+}
